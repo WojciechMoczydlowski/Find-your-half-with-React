@@ -1,0 +1,320 @@
+/* Main Page */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    margin:0 !important;
+    overflow-x: hidden;
+    background-image: url(../img/faces.jpg)
+}
+
+/* Background */
+
+.picture{
+    float:left;
+    height: 72px;
+}
+
+img.backgroundImage{
+    filter: grayscale(40%);
+}
+
+#allPictures{
+    margin:0 !important;
+    min-width:1920px;
+    max-width:1940px;
+    max-height: 1400px;
+    overflow-x: hidden;
+    opacity: 0.5;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+/* MainContent */
+
+#MainContent{
+    margin-left: auto;
+    margin-right: auto;
+    max-width:1000px;
+    text-align: center;
+    margin-top:40px;
+}
+
+.flexContainer:first-child{
+    margin-top:15px;
+}
+
+/* Tile */
+
+#Tile{
+    font-size: 5vw;
+    letter-spacing: 2px;
+    margin: 15px 0 25px 0;
+    padding: 20px;
+    color: black;
+    background-color:rgba(204, 204, 204, 0.808);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Footer */
+
+#footer{
+    margin-top: 40px; 
+    font-size: 1.3vw;
+    letter-spacing: 2px;
+    padding: 20px;
+    color: black;
+    background-color:rgba(204, 204, 204, 0.808);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* SearchBar */
+
+.searchButton{
+    width:30%;
+    cursor: pointer;
+    background-color:rgba(204, 204, 204, 0.808);
+    font-size: 1.3vw;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+}
+
+/* SearchPanel */
+
+#SearchPanelFlexContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin:0;
+}
+
+.rowSearchPanel100{
+    width: 100%;
+    flex:100%;
+    margin:10px 0 10px 0;
+    padding: 0 0 0 20px;
+} 
+
+.rowSearchPanel50{
+    display:flex;
+    flex-wrap:wrap;
+    width: 50%;
+    text-align: left;
+    flex:50%;
+    margin:10px 0 10px 0;
+    padding: 0 0 0 20px;
+} 
+
+label{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rowSearchPanel25{
+    width:25%;
+    flex:25%;
+}
+.active{
+    max-height: 315px;
+    transition: all 0.7s linear;
+    margin-top:20px;
+    padding-top:15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color:rgba(204, 204, 204, 0.808);
+}
+
+.inactive{
+    max-height: 0px;
+    transition: all 0.7s linear;
+    overflow: hidden;
+    padding: 0;
+}
+
+input[type=text]{
+    border-radius: 10px;
+    outline: none;
+    border:none;
+    text-align:center;
+}
+
+#searchInput{
+    font-size:3.3vw;
+}
+
+.searchPanelLabel select{
+   font-size:2vw;
+}
+
+#resetButton{
+    width:30%;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: rgb(240, 240, 240);
+    font-size: 1.3vw;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    outline:none;
+}
+
+/* Persons */
+
+.Persons{
+    max-height: 1000px;
+    overflow: auto;
+    margin-top: 10px;
+}
+
+/* ScrollBar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+ 
+/* handle */
+::-webkit-scrollbar-thumb {
+    background: #999; 
+    border-radius: 10px;
+}
+
+/* handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #888; 
+}
+
+/* PersonTile */
+
+.flexContainer{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap:wrap;
+    padding:10px;
+    background-color: rgba(204,204,204,0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.col25{
+    flex: 25%;
+    padding: 0px 0px 0px 30px;
+}
+
+.col75{
+    flex: 75%;
+}
+
+.row100{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.row40{
+    flex:40%;
+    text-align: left;
+    margin:5px 0px 5px 0px;
+    padding: 0 0 0 20px;
+}
+
+.row60{
+    flex:60%;
+    text-align: left;
+    margin:5px 0px 5px 0px;
+    padding: 0 0 0 20px;
+}
+
+.personImage{
+    height:128px;
+    width:128px;
+    background-color: black;
+    margin: 20px 0 15px 0;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+p.description{
+    margin:2px;
+    font-weight: 700;
+    font-size: 1.5vw;
+}
+
+p.string{
+    margin: 2px;
+    font-size: 1.5vw;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 700px) {
+    .row40,.row60{   
+        flex-direction: column;
+        flex:100%;
+        text-align:center;
+        margin-top:0;
+        padding:0;
+    }
+    .col25,col75{
+        flex-direction: column;
+        flex:100%;
+        padding:0;
+    }
+    #Tile{
+        font-size: 8vw;
+    }
+    #footer{
+        font-size: 3vw;
+    }
+    ::-webkit-scrollbar{
+        display:none;
+    }
+    p.description,p.string{
+        font-size: 6vw;
+    }
+    #MainContent, #Tile{
+        margin-top:0;
+        padding: 5px 0 5px 0;
+    }
+    .searchButton{
+        font-size: 5vw;
+    }
+    #searchInput{
+        font-size:9vw;
+    }
+
+    .rowSearchPanel100{
+        padding: 0;
+    }
+    .rowSearchPanel50{
+        flex:100%;
+        width: 100%;
+        text-align: center;
+        padding:0;
+        margin: 3px 0 3px 0;
+    }
+    .selectInput, .ageInput{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .ageInput{
+        margin-top:5px;
+    }
+    #resetButton{
+        font-size: 7vw;
+        padding: 5px 10px 5px 10px;
+    }
+}
